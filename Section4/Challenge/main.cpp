@@ -7,7 +7,6 @@ int main () {
     std::cin >> favourite_number;
     // std::endl corrisponde a \n, passa alla riga successiva nel terminale
     std::cout << "Amazing!! That's my favourit number too!" << std::endl;
-    std::cout << "No really!!, " << favourite_number << " is my favourite number too" << std::endl;
 
     return 0;
 }
