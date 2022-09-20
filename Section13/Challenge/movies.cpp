@@ -20,10 +20,20 @@ void Movies::display() const {
 }
 
 void Movies::add(const Movie &movie) {
+    for(Movie &m: this->collection) {
+        if(m.get_name() == movie.get_name()) {
+            return;
+        }
+    }
     collection.push_back(movie);
 }
 
 void Movies::add(const Movie &&movie) {
+    for(Movie &m: this->collection) {
+        if(m.get_name() == movie.get_name()) {
+            return;
+        }
+    }
     collection.push_back(movie);
 }
 
